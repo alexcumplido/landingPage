@@ -10,198 +10,186 @@
         <link rel="stylesheet" href="./css/main.css">
         <link rel="icon" href="img/favicon-32x32.png">
         <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    </body>
     </head>
     <body> 
-
-        <!---
-
-        Overall
-            Fonts
-            Alignment
-        
-        Exercici 1
-            Crear blue shape al hero
-            Editar els buttons del hero
-
-        Exercici 2
-            Customitzar estils tab: border bottom button
-
-        Exercici 3
--->
         <!-- --------------------------------------- Navbar --------------------------------------- -->
-        <nav class="navbar navbar-expand-md my-5 navbar-light">
+        <header id="header">
+            <nav class="navbar navbar-expand-md my-5 navbar-light">
+                <div class="container-lg">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="#" >
+                        <img src="img/logo-bookmark.svg" alt="Company logo">
+                    </a>
+                    <!-- responsive togger-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- navbar links-->
+                    <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav">
+                        <ul class="navbar-nav me-md-5">
+                            <li class="nav-item me-md-4">
+                                <a class="nav-link" href="#features">FEATURES</a>
+                            </li>
+                            <li class="nav-item me-md-4">
+                                <a class="nav-link" href="#extension">EXTENSION</a>
+                            </li>
+                            <li class="nav-item me-md-4">
+                                <a class="nav-link" href="#contact">CONTACT</a>
+                            </li>
+                            <li class="nav-item me-md-4">
+                                <a class="nav-link btn btn-secondary px-md-4 text-white" href="#Login">LOGIN</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+            <!-- --------------------------------------- Hero --------------------------------------- -->
+
             <div class="container-lg">
-                <!-- logo -->
-                <a class="navbar-brand" href="#" >
-                    <img src="img/logo-bookmark.svg" alt="Company logo">
-                </a>
-                <!-- responsive togger-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="row justify-content-center align-items-center text-center gap-5 gap-md-0 text-md-start">
 
-                <!-- navbar links-->
-                <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav">
-                    <ul class="navbar-nav me-md-5">
-                        <li class="nav-item me-md-4">
-                            <a class="nav-link" href="#Features">FEATURES</a>
-                        </li>
-                        <li class="nav-item me-md-4">
-                            <a class="nav-link" href="#Pricing">PRICING</a>
-                        </li>
-                        <li class="nav-item me-md-4">
-                            <a class="nav-link" href="#Contact">CONTACT</a>
-                        </li>
-                        <li class="nav-item me-md-4">
-                            <a class="nav-link btn btn-secondary px-md-4 text-white" href="#Login">LOGIN</a>
-                        </li>
-                    </ul>
+                    <div class="col-md-6 order-md-2">
+                        <img class="img-fluid" src="img/illustration-hero.svg" alt="App overview">
+                    </div>
+
+                    <div class="col-md-6 order-2 order-md-1">
+                        <h2>A Simple Bookmark Manager</h2>
+                        <p class="lead text-muted">A clean and simple interface to organize your favourite websites. Open a new browser tab and se your sites load instantly. Try it for free.</p>
+                        <button class="btn btn-primary my-5">
+                            Get in on Chrome
+                        </button>
+                        <button class="btn btn-primary my-3">
+                            Get in on Firefox
+                        </button>
+                    </div>
 
                 </div>
             </div>
-        </nav>
-        <!-- --------------------------------------- Hero --------------------------------------- -->
-        <div class="container-lg">
-            <div class="row justify-content-center align-items-center text-center gap-5 gap-md-0 text-md-start">
-
-                <div class="col-md-6 order-md-2">
-                    <img class="img-fluid" src="img/illustration-hero.svg" alt="App overview">
-                </div>
-
-                <div class="col-md-6 order-2 order-md-1">
-                    <h2>A Simple Bookmark Manager</h2>
-                    <p class="lead text-muted">A clean and simple interface to organize your favourite websites. Open a new browser tab and se your sites load instantly. Try it for free.</p>
-                    <button class="btn btn-primary my-5">
-                        Get in on Chrome
-                    </button>
-                    <button class="btn btn-primary my-3">
-                        Get in on Firefox
-                    </button>
-                </div>
-
-            </div>
-        </div>
+        </header>
         <!-- --------------------------------------- Tabs and features --------------------------------------- -->
-        <div class="container-lg">
-            <div class="text-center p-5">
-                <h2>Features</h2>
-                <p class="lead tex-muted">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-            </div>
-        
-            <ul class="nav nav-tabs gap-3 gap-md-5 flex-column align-items-center flex-md-row justify-content-md-center " id="nav-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link  " id="nav-simple-bookmarking-tab" data-bs-toggle="tab" data-bs-target="#nav-simple-bookmarking" type="button" role="tab" aria-controls="nav-simple-bookmarking" aria-selected="true">Simple bookmarking</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="nav-speedy-searching-tab" data-bs-toggle="tab" data-bs-target="#nav-speedy-searching" type="button" role="tab" aria-controls="nav-speedy-searching" aria-selected="false">Speedy searching</button>
-                </li>
-                <li class="nav-item " role="presentation">
-                    <button class="nav-link" id="nav-easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#nav-easy-sharing" type="button" role="tab" aria-controls="nav-easy-sharing" aria-selected="false">Easy sharing</button>
-                </li>
-            </ul>
+        <section id="features">
+            <div class="container-lg">
+                <div class="text-center p-5">
+                    <h2>Features</h2>
+                    <p class="lead tex-muted">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                </div>
             
-            <div class="tab-content py-5" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-simple-bookmarking" role="tabpanel" aria-labelledby="nav-simple-bookmarking-tab">
-                    <div class="row justify-content-center align-items-center text-center gap-5 gap-md-0 text-md-start">
-                        <div class="col-10 col-md-6">
-                            <img class="img-fluid" src="img/illustration-features-tab-1.svg" alt="App overview">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="text-center p-5">
-                                <h2>Bookmark in one click</h4>
-                                <p class="lead text-muted">Organize your bookmarks however you like. Our simple drag-and-drop interfaces gives you complete control over how you manage your favorite sites.</p>
-                                <button class="d-none d-md-inline-flex btn btn-primary my-3">
-                                    More info
-                                </button>
+                <ul class="nav nav-tabs gap-3 gap-md-5 flex-column align-items-center flex-md-row justify-content-md-center " id="nav-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link  " id="nav-simple-bookmarking-tab" data-bs-toggle="tab" data-bs-target="#nav-simple-bookmarking" type="button" role="tab" aria-controls="nav-simple-bookmarking" aria-selected="true">Simple bookmarking</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nav-speedy-searching-tab" data-bs-toggle="tab" data-bs-target="#nav-speedy-searching" type="button" role="tab" aria-controls="nav-speedy-searching" aria-selected="false">Speedy searching</button>
+                    </li>
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link" id="nav-easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#nav-easy-sharing" type="button" role="tab" aria-controls="nav-easy-sharing" aria-selected="false">Easy sharing</button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content py-5" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-simple-bookmarking" role="tabpanel" aria-labelledby="nav-simple-bookmarking-tab">
+                        <div class="row justify-content-center align-items-center text-center gap-5 gap-md-0 text-md-start">
+                            <div class="col-10 col-md-6">
+                                <img class="img-fluid" src="img/illustration-features-tab-1.svg" alt="App overview">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center p-5">
+                                    <h2>Bookmark in one click</h4>
+                                    <p class="lead text-muted">Organize your bookmarks however you like. Our simple drag-and-drop interfaces gives you complete control over how you manage your favorite sites.</p>
+                                    <button class="d-none d-md-inline-flex btn btn-primary my-3">
+                                        More info
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel" aria-labelledby="nav-speedy-searching-tab">
-                    <div class="row justify-content-center align-items-center text-center gap-5 gap-md-0 text-md-start">
-                        <div class="col-10 col-md-6">
-                            <img class="img-fluid" src="img/illustration-features-tab-2.svg" alt="App overview">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="text-center p-5">
-                                <h2>Intelligent search</h2>
-                                <p class="lead text-muted">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks</p>
-                                <button class="d-none d-md-inline-flex btn btn-primary my-3">
-                                    More info
-                                </button>
+                    <div class="tab-pane fade" id="nav-speedy-searching" role="tabpanel" aria-labelledby="nav-speedy-searching-tab">
+                        <div class="row justify-content-center align-items-center text-center gap-5 gap-md-0 text-md-start">
+                            <div class="col-10 col-md-6">
+                                <img class="img-fluid" src="img/illustration-features-tab-2.svg" alt="App overview">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center p-5">
+                                    <h2>Intelligent search</h2>
+                                    <p class="lead text-muted">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks</p>
+                                    <button class="d-none d-md-inline-flex btn btn-primary my-3">
+                                        More info
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="tab-pane fade" id="nav-easy-sharing" role="tabpanel" aria-labelledby="nav-easy-sharing-tab">
-                    <div class="row justify-content-center align-items-center text-center gap-5 gap-md-0 text-md-start">
-                        <div class="col-10 col-md-6">
-                            <img class="img-fluid" src="img/illustration-features-tab-3.svg" alt="App overview">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="text-center p-5">
-                                <h2>Share your bookmarks</h2>
-                                <p class="lead text-muted">Easily share your bookmarks and collections with others. Create a shareable link that you cand send at the click of a button</p>
-                                <button class="d-none d-md-inline-flex btn btn-primary my-3">
-                                    More info
-                                </button>
+                    <div class="tab-pane fade" id="nav-easy-sharing" role="tabpanel" aria-labelledby="nav-easy-sharing-tab">
+                        <div class="row justify-content-center align-items-center text-center gap-5 gap-md-0 text-md-start">
+                            <div class="col-10 col-md-6">
+                                <img class="img-fluid" src="img/illustration-features-tab-3.svg" alt="App overview">
                             </div>
-                        </div>
-                    </div>  
+                            <div class="col-md-6">
+                                <div class="text-center p-5">
+                                    <h2>Share your bookmarks</h2>
+                                    <p class="lead text-muted">Easily share your bookmarks and collections with others. Create a shareable link that you cand send at the click of a button</p>
+                                    <button class="d-none d-md-inline-flex btn btn-primary my-3">
+                                        More info
+                                    </button>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
                 </div>
             </div>
-        </div>
-        
+        </section>
         <!-- --------------------------------------- Cards --------------------------------------- -->
-        
-        
-        <div class="container-lg">
-            <div class="text-center p-5">
-                <h2>Download the extension</h2>   
-                <p class="lead tex-muted">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
-            </div>
-            <div class="row justify-content-center align-content-center gap-5">
-                <div class="card col-8 col-md-3">
-                    <img src="img/logo-chrome.svg" class="card-img-top" alt="Chrome browser logo">
-                    <div class="card-body">
-                      <h5 class="card-title">Add to Chrome</h5>
-                      <p class="card-text">Minimum version 62</p>
-                      <img class="" src="img/bg-dots.svg" alt="">
-                      <a href="#" class="btn btn-primary">Add & Install extension</a>
-                    </div>
-                  </div>
-                  <div class="card col-8 col-md-3 ">
-                    <img src="img/logo-firefox.svg" class="card-img-top" alt="Firefox browser logo">
-                    <div class="card-body">
-                      <h5 class="card-title">Add to Firefox</h5>
-                      <p class="card-text">Minimum version 55</p>
-                      <img class="" src="img/bg-dots.svg" alt="">
-                      <a href="#" class="btn btn-primary">Add & Install extension</a>
-                    </div>
-                  </div>
-                  <div class="card col-8 col-md-3 ">
-                    <img src="img/logo-opera.svg" class=" card-img-top" alt="Opera browser logo">
-                    <div class="card-body">
-                      <h5 class="card-title">Add to Opera</h5>
-                      <p class="card-text">Minimum version 46</p>
-                      <img class="" src="img/bg-dots.svg" alt="">
-                      <a href="#" class="btn btn-primary">Add & Install extension</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        
-        <!-- --------------------------------------- Accordion --------------------------------------- -->
-        <div class="container-lg my-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center">
-                    <h2>Frequently Asked Questions</h2>
-                    <p class="lead text-muted">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+        <section id="extension">
+            <div class="container-lg">
+                <div class="text-center p-5">
+                    <h2>Download the extension</h2>   
+                    <p class="lead tex-muted">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+                </div>
+                <div class="row justify-content-center align-content-center gap-5">
+                    <div class="card col-8 col-md-3">
+                        <img src="img/logo-chrome.svg" class="card-img-top" alt="Chrome browser logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Add to Chrome</h5>
+                            <p class="card-text">Minimum version 62</p>
+                            <img class="" src="img/bg-dots.svg" alt="">
+                            <a href="#" class="btn btn-primary">Add & Install extension</a>
+                        </div>
+                        </div>
+                        <div class="card col-8 col-md-3 ">
+                        <img src="img/logo-firefox.svg" class="card-img-top" alt="Firefox browser logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Add to Firefox</h5>
+                            <p class="card-text">Minimum version 55</p>
+                            <img class="" src="img/bg-dots.svg" alt="">
+                            <a href="#" class="btn btn-primary">Add & Install extension</a>
+                        </div>
+                        </div>
+                        <div class="card col-8 col-md-3 ">
+                        <img src="img/logo-opera.svg" class=" card-img-top" alt="Opera browser logo">
+                        <div class="card-body">
+                            <h5 class="card-title">Add to Opera</h5>
+                            <p class="card-text">Minimum version 46</p>
+                            <img class="" src="img/bg-dots.svg" alt="">
+                            <a href="#" class="btn btn-primary">Add & Install extension</a>
+                        </div>
+                        </div>
                 </div>
             </div>
+        </section>
+        <!-- --------------------------------------- Accordion --------------------------------------- -->
+        <section id="faq">
+            <div class="container-lg my-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <h2>Frequently Asked Questions</h2>
+                        <p class="lead text-muted">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+                    </div>
+                </div>
             <div class="row justify-content-center">
                 <div class="accordion º col-12 col-md-6" id="accordionFAQ">
 
@@ -226,7 +214,7 @@
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
                         <div class="accordion-body">
-                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi porro itaque officiis eveniet consequatur est neque saepe, numquam, ipsum ipsam harum consectetur soluta laudantium, eaque dicta ut sint culpa qui?
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi porro itaque officiis eveniet consequatur est neque saepe, numquam, ipsum ipsam harum consectetur soluta laudantium, eaque dicta ut sint culpa qui?
                         </div>
                         </div>
                     </div>
@@ -263,28 +251,62 @@
                     <button type="button" class="d-md-inline-flex btn btn-primary">More info</button>
                 </button>
             </div>
-           
-      
         </div>
-        <!-- --------------------------------------- Form --------------------------------------- -->
-        <div class="container-fluid bg-primary p-5">
-            <div class="row justify-content-center p-2">
-                <div class="col-md-6 text-center    ">
-                    <p class="lead text-white fw-bolder">35,000+ ALREADY JOINED</p>
-                    <p class="lead text-white fw-bolder">Stay up-to-date with what we're doing</p>
+    </section>
+
+        <!-- --------------------------------------- Form - CallToAction --------------------------------------- -->
+    <section id="contact">
+        <footer class="text-center text-white bg-primary">
+            <div class="container-fluid p-5">
+                <div class="row justify-content-center p-2">
+                    <div class="col-md-6 text-center    ">
+                        <p class="lead text-white fw-bolder">35,000+ ALREADY JOINED</p>
+                        <p class="lead text-white fw-bolder">Stay up-to-date with what we're doing</p>
+                    </div>
                 </div>
+                <form class="row justify-content-center p-2">
+                    <div class="col-8 col-md-3 py-2 py-md-0 text-center">
+                        <input type="email" class="form-control" id="emailNewsletter" placeholder="Enter your email adress">
+                    </div>
+                    <div class="col-8 col-md-2 py-2 py-md-0 text-center">
+                        <button type="submit" class="btn btn-secondary w-100 text-white">Contact us</button>
+                    </div>
+                </form>
             </div>
-            <form class="row justify-content-center p-2">
-                <div class="col-8 col-md-3 py-2 py-md-0 text-center">
-                    <input type="email" class="form-control" id="emailNewsletter" placeholder="Enter your email adress">
-                </div>
-                <div class="col-8 col-md-2 py-2 py-md-0 text-center">
-                    <button type="submit" class="btn btn-secondary w-100 text-white">Contact us</button>
-                </div>
-            </form>
-        <!-- --------------------------------------- Footer --------------------------------------- -->
-       </div>
-       <div class="container-fluid bg-secondary">
-        hello
-       </div>
+            <!-- --------------------------------------- nav-footer --------------------------------------- -->
+            <div class="row bg-dark p-2 g-5 alig-content-center ">
+                    <div class="col-md-2">
+                        <a class="navbar-brand" href="#header" >
+                            <img src="img/logo-bookmark.svg" alt="Company logo">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav flex-column flex-md-row">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#features">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#extension">EXTENSION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#header">ABOUT</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <ul class="col-md-2 nav d-flex align-cotent-center justify-content-center">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/" >
+                                <img src="img/icon-facebook.svg" alt="Facebook link">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://twitter.com/?lang=en" >
+                                <img src="img/icon-twitter.svg" alt="Twitter link">   
+                            </a>  
+                        </li>
+                    </ul>
+            </div>
+        </footer>
+    </section>
 </html>
+
