@@ -1,3 +1,21 @@
+#features .nav-link {
+  border: none;
+}
+
+#features .nav-item {
+  border-bottom: 1px solid #dee2e6;
+}
+
+#features .nav-item:hover {
+  border-bottom: 0.25rem solid #FA5959;
+}
+
+@media (max-width: 767px) {
+  #features .nav-item {
+    border-top: 1px solid #dee2e6;
+  }
+}
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

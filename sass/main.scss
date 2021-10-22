@@ -1,7 +1,23 @@
-//Theme color variables
+//Global variables
 $primary: #5265E1;
 $secondary: #FA5959;
-
 $enable-shadows: true;
+
+#features .nav-link {
+    border: none;
+}
+
+#features .nav-item {
+    border-bottom: 1px solid #dee2e6; 
+    &:hover {
+        border-bottom: 0.25rem solid $secondary;
+    }
+}
+
+@media (max-width: 767px) {
+    #features .nav-item {
+        border-top: 1px solid #dee2e6;  
+    }
+}
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
