@@ -22,20 +22,18 @@ $enable-shadows: true;
     height: 125px;
 }
 
-/*Cards
-#extension .card:nth-child(2){
-    margin-top: 2.5rem;
-}
-
-#extension .card:nth-child(3){
-    margin-top: 5rem;
-}
-*/
-
 /*mediaQ*/
 @media (min-width: 767px) {
     #features .nav-item {
         border-top: none;  
+    }
+
+    #extension .card:nth-child(2){
+        margin-top: 5rem;
+    }
+    
+    #extension .card:nth-child(3){
+        margin-top: 10rem;
     }
 }
 
