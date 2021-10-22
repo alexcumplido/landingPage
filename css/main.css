@@ -1,8 +1,11 @@
+/*Tabs*/
+#features ul,
 #features .nav-link {
   border: none;
 }
 
 #features .nav-item {
+  border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -10,9 +13,24 @@
   border-bottom: 0.25rem solid #FA5959;
 }
 
-@media (max-width: 767px) {
+#extension .card-img-top {
+  width: 125px;
+  height: 125px;
+}
+
+/*Cards
+#extension .card:nth-child(2){
+    margin-top: 2.5rem;
+}
+
+#extension .card:nth-child(3){
+    margin-top: 5rem;
+}
+*/
+/*mediaQ*/
+@media (min-width: 767px) {
   #features .nav-item {
-    border-top: 1px solid #dee2e6;
+    border-top: none;
   }
 }
 
