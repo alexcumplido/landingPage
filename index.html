@@ -12,21 +12,20 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     </head>
     <body> 
-        <!-- --------------------------------------- Navbar --------------------------------------- -->
+        <!-- ---------------------------------------- Navigation ---------------------------------------- -->
         <header id="header">
-            <nav class="navbar navbar-expand-md my-5 navbar-light">
+            <nav class="navbar navbar-expand-md navbar-light my-5 px-4 px-md-0">
                 <div class="container-lg">
                     <!-- logo -->
                     <a class="navbar-brand" href="#" >
                         <img src="img/logo-bookmark.svg" alt="Company logo">
                     </a>
-                    <!-- responsive togger-->
+                    <!-- toggler button -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <!-- navbar links-->
-                    <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav me-md-5">
                             <li class="nav-item me-md-4">
                                 <a class="nav-link" href="#features">FEATURES</a>
@@ -38,39 +37,29 @@
                                 <a class="nav-link" href="#contact">CONTACT</a>
                             </li>
                             <li class="nav-item me-md-4">
-                                <a class="nav-link btn btn-secondary px-md-4 text-white" href="#Login">LOGIN</a>
+                                <a class="nav-link btn btn-secondary px-md-4 text-white shadow-sm" href="#Login">LOGIN</a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </nav>
-
-            <!-- --------------------------------------- Hero --------------------------------------- -->
-
-            <div class="container-lg">
-                <div class="row justify-content-center align-items-center text-center gap-5 gap-md-0 text-md-start">
-
-                    <div class="col-md-6 order-md-2">
+        <!-- ---------------------------------------- Hero ---------------------------------------- -->
+            <div class="container-lg my-5 text-center text-md-start">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-9 col-md-7 order-md-2">
                         <img class="img-fluid" src="img/illustration-hero.svg" alt="App overview">
                     </div>
-
-                    <div class="col-md-6 order-2 order-md-1">
-                        <h2>A Simple Bookmark Manager</h2>
-                        <p class="lead text-muted">A clean and simple interface to organize your favourite websites. Open a new browser tab and se your sites load instantly. Try it for free.</p>
-                        <button class="btn btn-primary my-5">
-                            Get in on Chrome
-                        </button>
-                        <button class="btn btn-primary my-3">
-                            Get in on Firefox
-                        </button>
+                    <div class="col-9 col-md-5 order-2 order-md-1">
+                        <h2 class="py-2">A Simple Bookmark Manager</h2>
+                        <p class="py-2 lead text-muted">A clean and simple interface to organize your favourite websites. Open a new browser tab and se your sites load instantly. Try it for free.</p>
+                        <button class="py-2 btn btn-primary shadow">Get in on Chrome</button>
+                        <button class="py-2 btn btn-light shadow">Get in on Firefox</button>
                     </div>
-
-                </div>
+                </div>  
             </div>
         </header>
         <!-- --------------------------------------- Tabs and features --------------------------------------- -->
-        <section id="features">
+        <section id="features my-5">
             <div class="container-lg">
                 <div class="text-center p-5">
                     <h2>Features</h2>
@@ -116,7 +105,7 @@
                                 <div class="text-center p-5">
                                     <h2>Intelligent search</h2>
                                     <p class="lead text-muted">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks</p>
-                                    <button class="d-none d-md-inline-flex btn btn-primary my-3">
+                                    <button class="d-none d-md-inline-flex btn btn-primary my-3 shadow-sm">
                                         More info
                                     </button>
                                 </div>
@@ -157,7 +146,7 @@
                             <h5 class="card-title">Add to Chrome</h5>
                             <p class="card-text">Minimum version 62</p>
                             <img class="" src="img/bg-dots.svg" alt="">
-                            <a href="#" class="btn btn-primary">Add & Install extension</a>
+                            <a href="#" class="btn btn-primary shadow">Add & Install extension</a>
                         </div>
                         </div>
                         <div class="card col-8 col-md-3 ">
@@ -166,7 +155,7 @@
                             <h5 class="card-title">Add to Firefox</h5>
                             <p class="card-text">Minimum version 55</p>
                             <img class="" src="img/bg-dots.svg" alt="">
-                            <a href="#" class="btn btn-primary">Add & Install extension</a>
+                            <a href="#" class="btn btn-primary shadow">Add & Install extension</a>
                         </div>
                         </div>
                         <div class="card col-8 col-md-3 ">
@@ -175,7 +164,7 @@
                             <h5 class="card-title">Add to Opera</h5>
                             <p class="card-text">Minimum version 46</p>
                             <img class="" src="img/bg-dots.svg" alt="">
-                            <a href="#" class="btn btn-primary">Add & Install extension</a>
+                            <a href="#" class="btn btn-primary shadow">Add & Install extension</a>
                         </div>
                         </div>
                 </div>
@@ -199,7 +188,7 @@
                             What is bookmark ?
                         </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
                         <div class="accordion-body">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo similique eveniet? Vero quibusdam corrupti repellat modi id eos labore eaque nobis, provident ullam repudiandae? Enim quas facilis quia dolorem?
                         </div>
@@ -248,7 +237,7 @@
                 </div>
             </div>
             <div class="text-center py-4">
-                    <button type="button" class="d-md-inline-flex btn btn-primary">More info</button>
+                    <button type="button" class="d-md-inline-flex btn btn-primary shadow-sm">More info</button>
                 </button>
             </div>
         </div>
@@ -274,7 +263,7 @@
                 </form>
             </div>
             <!-- --------------------------------------- nav-footer --------------------------------------- -->
-            <div class="row bg-dark p-2 g-5 alig-content-center ">
+            <div class="row bg-dark p-2 alig-content-center ">
                     <div class="col-md-2">
                         <a class="navbar-brand" href="#header" >
                             <img src="img/logo-bookmark.svg" alt="Company logo">

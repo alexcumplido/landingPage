@@ -1,9 +1,14 @@
+//Theme color variables
 $primary: #5265E1;
 $secondary: #FA5959;
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+$enable-shadows: true;
 
 .card-img-top { 
     width: 150px;
     height: 150px;
 }
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
