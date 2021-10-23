@@ -32,6 +32,13 @@
   border-top: var(--standardBorder);
 }
 
+/*Form*/
+form .invalid-feedback {
+  color: white;
+  background-color: #FA5959;
+  border-radius: 0.5rem;
+}
+
 /*mediaQ*/
 @media (min-width: 767px) {
   #features .nav-item {

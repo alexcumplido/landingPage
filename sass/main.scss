@@ -39,6 +39,13 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
       }
 }
 
+/*Form*/
+form .invalid-feedback {
+    color: hsl(0, 0%, 100%);
+    background-color: $secondary;
+    border-radius: 0.5rem;
+}
+
 /*mediaQ*/
 @media (min-width: 767px) {
     #features .nav-item {
