@@ -2,6 +2,7 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 $enable-shadows: true;
+$accordion-border-color: none;
 
 /*Tabs*/
 #features ul,
@@ -22,6 +23,15 @@ $enable-shadows: true;
     height: 125px;
 }
 
+/*Accordion*/
+.accordion-item {
+    border-bottom: 1px solid #dee2e6;
+  
+    &:last-of-type { 
+        border-top: 1px solid #dee2e6;
+      }
+}
+
 /*mediaQ*/
 @media (min-width: 767px) {
     #features .nav-item {
@@ -35,6 +45,10 @@ $enable-shadows: true;
     #extension .card:nth-child(3){
         margin-top: 10rem;
     }
-}
+
+    .accordion-item {
+        border-top: 1px solid #dee2e6;
+    }
+}   
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
