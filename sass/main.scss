@@ -1,8 +1,14 @@
+:root {
+    --standardBorder:1px solid #dee2e6;
+}
+
 //Global variables
 $primary: #5265E1;
 $secondary: #FA5959;
 $enable-shadows: true;
 $accordion-border-color: none;
+$accordion-button-icon: url('../img/icon-arrow.svg');
+$accordion-button-active-icon:  url('../img/icon-arrow.svg');
 
 /*Tabs*/
 #features ul,
@@ -11,13 +17,14 @@ $accordion-border-color: none;
 }
 
 #features .nav-item {
-    border-top: 1px solid #dee2e6; 
+    border-top: var(--standardBorder); 
     border-bottom: 1px solid #dee2e6; 
     &:hover {
         border-bottom: 0.25rem solid $secondary;
     }
 }
 
+/*Cards*/
 #extension .card-img-top {
     width: 125px;
     height: 125px;
@@ -25,10 +32,10 @@ $accordion-border-color: none;
 
 /*Accordion*/
 .accordion-item {
-    border-bottom: 1px solid #dee2e6;
-  
+    border-bottom: var(--standardBorder); ;
+
     &:last-of-type { 
-        border-top: 1px solid #dee2e6;
+        border-top: var(--standardBorder); ;
       }
 }
 
@@ -47,7 +54,7 @@ $accordion-border-color: none;
     }
 
     .accordion-item {
-        border-top: 1px solid #dee2e6;
+        border-top: var(--standardBorder); ;
     }
 }   
 
