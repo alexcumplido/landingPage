@@ -3,17 +3,30 @@
   overflow-x: hidden;
 }
 
+#header .modal-header {
+  border: none;
+}
+
+#header .modal-content {
+  background-color: #22262a;
+}
+
+#header .modal .nav-item {
+  border-top: 1px solid #dfe3e7;
+  border-bottom: 1px solid #dfe3e7;
+  width: 100%;
+}
+
+#header .modal a {
+  color: #dfe3e7;
+}
+
 #header .custom-shape-hero {
   z-index: -1;
   width: 750px;
   height: 75%;
   bottom: 5px;
   left: 140px;
-}
-
-#header .nav-item {
-  border-top: 1px solid #dfe3e7;
-  border-bottom: 1px solid #dfe3e7;
 }
 
 /*Tab*/
@@ -61,17 +74,8 @@
   border-radius: 0.5rem;
 }
 
-@media (min-width: 767px) {
-  #header {
-    color: #5265e0;
-  }
-}
-
 /*mediaQ*/
 @media (min-width: 767px) {
-  #header .nav-item {
-    border: none;
-  }
   #features .nav-item {
     border-top: none;
   }

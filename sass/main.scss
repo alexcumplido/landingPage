@@ -13,17 +13,30 @@ $font-family-base: 'Rubik';
     overflow-x: hidden;
 }
 
+#header .modal-header {
+    border: none;
+}
+
+#header .modal-content {    
+    background-color: hsl(210, 11%, 15%);
+}
+
+#header .modal .nav-item {
+    border-top: $standardBorder;
+    border-bottom: $standardBorder; 
+    width: 100%;
+}
+
+#header .modal a {
+    color: hsl(210, 14%, 89%);
+}
+
 #header .custom-shape-hero {
     z-index: -1;
     width: 750px; 
     height: 75%;
     bottom: 5px;
     left: 140px;
-}
-
-#header .nav-item {
-    border-top: $standardBorder;
-    border-bottom: $standardBorder; 
 }
 
 /*Tab*/
@@ -72,10 +85,6 @@ $font-family-base: 'Rubik';
 
 /*mediaQ*/
 @media (min-width: 767px) {
-
-    #header .nav-item {
-        border: none;
-    }
     #features .nav-item {
         border-top: none;  
     }
