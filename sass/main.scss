@@ -9,6 +9,9 @@ $accordion-button-icon: url('../img/icon-arrow.svg');
 $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 $font-family-base: 'Rubik';
 
+#header {
+    overflow-x: hidden;
+}
 
 #header .custom-shape-hero {
     z-index: -1;
@@ -34,7 +37,7 @@ $font-family-base: 'Rubik';
 
 #features .custom-shape-tab {
     z-index: -1;
-    width: 1000px; 
+    width: 750px; 
     height: 90%;
     top: 80px;
     right: 150px;
