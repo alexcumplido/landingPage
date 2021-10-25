@@ -9,7 +9,16 @@ $accordion-button-icon: url('../img/icon-arrow.svg');
 $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 $font-family-base: 'Rubik';
 
-/*Tabs*/
+
+#header .custom-shape-hero {
+    z-index: -1;
+    width: 750px; 
+    height: 75%;
+    bottom: 5px;
+    left: 140px;
+}
+
+/*Tab*/
 #features ul,
 #features .nav-link {
     border: none;
@@ -21,6 +30,14 @@ $font-family-base: 'Rubik';
     &:hover {
         border-bottom: 0.25rem solid $secondary;
     }
+}
+
+#features .custom-shape-tab {
+    z-index: -1;
+    width: 1000px; 
+    height: 90%;
+    top: 80px;
+    right: 150px;
 }
 
 /*Cards*/
