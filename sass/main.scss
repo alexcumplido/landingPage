@@ -30,7 +30,7 @@ $font-family-base: 'Rubik';
 }
 
 /*Accordion*/
-.accordion-item {
+#faq .accordion-item {
     border-bottom: $standardBorder;
 
     &:last-of-type { 
@@ -39,7 +39,7 @@ $font-family-base: 'Rubik';
 }
 
 /*Form*/
-form .invalid-feedback {
+#contact .invalid-feedback {
     color: hsl(0, 0%, 100%);
     background-color: $secondary;
     border-radius: 0.5rem;
@@ -60,7 +60,7 @@ form .invalid-feedback {
         margin-top: 10rem;
     }
 
-    .accordion-item {
+    #faq .accordion-item {
         border-top: $standardBorder;
     }
 }   

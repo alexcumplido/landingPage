@@ -21,16 +21,16 @@
 }
 
 /*Accordion*/
-.accordion-item {
+#faq .accordion-item {
   border-bottom: 1px solid #dfe3e7;
 }
 
-.accordion-item:last-of-type {
+#faq .accordion-item:last-of-type {
   border-top: 1px solid #dfe3e7;
 }
 
 /*Form*/
-form .invalid-feedback {
+#contact .invalid-feedback {
   color: white;
   background-color: #fa5757;
   border-radius: 0.5rem;
@@ -47,7 +47,7 @@ form .invalid-feedback {
   #extension .card:nth-child(3) {
     margin-top: 10rem;
   }
-  .accordion-item {
+  #faq .accordion-item {
     border-top: 1px solid #dfe3e7;
   }
 }
