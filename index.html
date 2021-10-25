@@ -21,11 +21,46 @@
                         <img src="img/logo-bookmark.svg" alt="Company logo">
                     </a>
                     <!-- toggler button -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <!-- navbar links-->
-                    <div class=" collapse navbar-collapse justify-content-end me-md-5 pe-md-5" id="navbarNav">
+                    <!-- mobile navbar modal --> 
+                    <div class="modal fade" id="navbarModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen ">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <img id="modalLabel" src="img/logo-bookmark.svg" alt="Company logo">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="navbar-nav align-items-center text-center gap-4">
+                                        <li class="nav-item border-md-none">
+                                            <a class="nav-link" href="#features">FEATURES</a>
+                                        </li>
+                                        <li class="nav-item border-md-none">
+                                            <a class="nav-link " href="#extension">EXTENSION</a>
+                                        </li>
+                                        <li class="nav-item border-md-none ">
+                                            <a class="nav-link" href="#contact">CONTACT</a>
+                                        </li>
+                                        <li class="nav-item border-md-none">
+                                            <a class="nav-link btn-m btn-secondary px-md-4 text-white shadow-sm" href="#Login">LOGIN</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav flex-row justify-content-center d-md-none mt-5 pt-5 gap-5 bg-dark">
+                                        <li class="nav-item">
+                                            <a href="#"><img src="img/icon-facebook.svg" alt="Facebook link"></a>
+                                        </li>
+                                        <li class="nav-item"> 
+                                            <a href="#"><img src="img/icon-twitter.svg" alt="Twitter link"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--lg screen navbar menu -->
+                    <div class="collapse navbar-collapse justify-content-end me-md-5 pe-md-5" id="navbarNav">
                         <ul class="navbar-nav align-items-center text-center gap-4">
                             <li class="nav-item border-md-none">
                                 <a class="nav-link" href="#features">FEATURES</a>
@@ -38,15 +73,6 @@
                             </li>
                             <li class="nav-item border-md-none">
                                 <a class="nav-link btn-m btn-secondary px-md-4 text-white shadow-sm" href="#Login">LOGIN</a>
-                            </li>
-                        </ul>
-
-                        <ul class="nav flex-row justify-content-center d-md-none mt-5 pt-5 gap-5 bg-dark">
-                            <li class="nav-item">
-                                <a href="#"><img src="img/icon-facebook.svg" alt="Facebook link"></a>
-                            </li>
-                            <li class="nav-item"> 
-                                <a href="#"><img src="img/icon-twitter.svg" alt="Twitter link"></a>
                             </li>
                         </ul>
                     </div>
@@ -193,7 +219,7 @@
                 </div>
             </div>
         </section>
-       <!-- ---------------------------------------- Accordion ---------------------------------------- -->
+        <!-- ---------------------------------------- Accordion ---------------------------------------- -->
         <section id="faq ">
             <div class="container-lg my-5">
                 <div class="row justify-content-center">
