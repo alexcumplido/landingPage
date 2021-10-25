@@ -21,6 +21,11 @@ $font-family-base: 'Rubik';
     left: 140px;
 }
 
+#header .nav-item {
+    border-top: $standardBorder;
+    border-bottom: $standardBorder; 
+}
+
 /*Tab*/
 #features ul,
 #features .nav-link {
@@ -68,6 +73,9 @@ $font-family-base: 'Rubik';
 /*mediaQ*/
 @media (min-width: 767px) {
 
+    #header .nav-item {
+        border: none;
+    }
     #features .nav-item {
         border-top: none;  
     }
