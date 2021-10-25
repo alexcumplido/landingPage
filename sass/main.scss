@@ -8,9 +8,17 @@ $accordion-border-color: none;
 $accordion-button-icon: url('../img/icon-arrow.svg');
 $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 $font-family-base: 'Rubik';
+$navbar-light-hover-color: $secondary;
+$nav-link-hover-color: $secondary;
 
-#header {
+
+#header  {
     overflow-x: hidden;
+    
+}
+
+a.nav-link:hover {
+    color: $secondary;
 }
 
 #header .modal-header {
@@ -18,7 +26,7 @@ $font-family-base: 'Rubik';
 }
 
 #header .modal-content {    
-    background-color: hsl(210, 11%, 15%);
+    background-color: hsla(210, 11%, 15%, 0.364);
 }
 
 #header .modal .nav-item {
@@ -81,6 +89,13 @@ $font-family-base: 'Rubik';
     color: hsl(0, 0%, 100%);
     background-color: $secondary;
     border-radius: 0.5rem;
+}
+
+#contact button:hover,
+#header a.btn:hover {
+    color: $secondary;
+    background:$white;
+    border: 1px solid $secondary;
 }
 
 /*mediaQ*/
