@@ -82,7 +82,8 @@
     background: white;
     border: 0.12rem solid #fa5757;
   }
-  #hero .btn-primary:hover {
+  #hero .btn-primary:hover,
+  #extension a.btn:hover {
     color: #5265e0;
     background: white;
     border: 0.12rem solid #5265e0;
@@ -91,11 +92,6 @@
     color: #9194a1;
     background: white;
     border: 0.12rem solid #9194a1;
-  }
-  #extension a.btn:hover {
-    color: #5265e0;
-    background: white;
-    border: 0.12rem solid #5265e0;
   }
   #features .nav-item {
     border-top: none;

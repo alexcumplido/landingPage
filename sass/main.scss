@@ -107,7 +107,7 @@ $accordion-button-active-color: $secondary;
 //Destkop active states
 @media (min-width: 767px) {
 
-    @mixin btn ($color,$background) {
+    @mixin btnStyle ($color) {
         color: $color;
         background: $white;
         border: 0.12rem solid $color;
@@ -115,22 +115,18 @@ $accordion-button-active-color: $secondary;
 
     #header .btn-secondary:hover,
     #contact .btn-secondary:hover {    
-        @include btn($secondary,$secondary);
+        @include btnStyle ($secondary);
     }
     
-    #hero {
-        .btn-primary:hover {
-            @include btn($primary,$primary);
-        }
-        .btn-light:hover {
-            @include btn($grayishBlue,$grayishBlue);
-        }
+    #hero .btn-primary:hover,
+    #extension a.btn:hover {
+        @include btnStyle ($primary);
     }
 
-    #extension a.btn:hover{
-        @include btn($primary,$primary);
+    #hero .btn-light:hover {
+        @include btnStyle ($grayishBlue);
     }
-    
+
     #features .nav-item {
         border-top: none;  
     }
