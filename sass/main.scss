@@ -2,15 +2,13 @@
 $primary: hsl(232, 70%, 60%);
 $secondary: hsl(0, 94%, 66%);
 $grayishBlue: hsl(229, 8%, 60%);
-$white: hsl(0, 0%, 100%);
-$standardBorder: 0.125rem solid hsl(210, 14%, 89%);
+$standardBorder: 1px solid hsl(210, 14%, 89%);
 
 $enable-shadows: true;
 $font-family-base: 'Rubik';
 
 $navbar-light-hover-color: $secondary;
 $nav-link-hover-color: $secondary;
-$nav-tabs-border: none;
 
 $modal-content-border-width: none;
 $modal-content-bg:hsla(210, 11%, 15%, 0.802);
@@ -23,27 +21,27 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     overflow-x: hidden;
 }
 
-/*Nabvar mobile modal*/
+/*nabvar mobile Active States*/
 #header .modal {
     .nav-item {
         border-top: $standardBorder;
         border-bottom: $standardBorder; 
         width: 100%;
-   
+
     &:hover{
-        border:none 
+        border:none
     }
 
-        .nav-link{
-            color: $white;
+    .nav-link{
+        color: hsl(210, 14%, 89%);
 
         &:hover {
             font-weight: 600;
             border:$standardBorder;
             border-radius: 0.50rem;
         }
-        } 
-    }     
+    } 
+}     
 }
 
 #header .custom-shape-hero {
@@ -55,6 +53,11 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 }
 
 /*Tab*/
+#features ul,
+#features .nav-link {
+    border: none;
+}
+
 #features .nav-item {
     border-top: $standardBorder; 
     border-bottom: $standardBorder; 
@@ -83,33 +86,34 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 
     &:last-of-type { 
         border-top: $standardBorder; ;
-    }
+      }
 }
 
 /*Form*/
 #contact .invalid-feedback {
-    color: $white;
+    color: hsl(0, 0%, 100%);
     background-color: $secondary;
     border-radius: 0.5rem;
 }
+
 
 /*mediaQ*/
 @media (min-width: 767px) {
     #header .nav-item .btn:hover,
     #contact button:hover {
     color: $secondary;
-    background:$white;
+    background:hsl(0, 0%, 100%);
     border: 1px solid $secondary;
     }
 
     #hero {
         .btn-primary:hover {
-            background:$white;
+            background:hsl(0, 0%, 100%);
             color: $primary;
             border: 0.12rem solid $primary;
         }
         .btn-light:hover {
-            background:$white;
+            background:hsl(0, 0%, 100%);
             color: $grayishBlue;
             border: 0.12rem solid$grayishBlue;
         }
@@ -128,7 +132,7 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     }
 
     #extension a.btn:hover {
-        background:$white;
+        background:hsl(0, 0%, 100%);
         color: $primary;
         border: 0.12rem solid $primary;
     }
