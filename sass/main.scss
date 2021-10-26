@@ -25,10 +25,14 @@ $accordion-border-color: none;
 $accordion-button-icon: url('../img/icon-arrow.svg');
 $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 
-
 /*Header*/
 #header  {
     overflow-x: hidden;
+}
+
+#header .btn-secondary,
+#contact .btn-secondary {
+    color: $white;
 }
 
 /*nabvar mobile Active States*/
@@ -91,37 +95,32 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 }
 
 /*Form*/
-#contact {
-    .invalid-feedback {
-        color: $white;
-        background-color: $secondary;
-        border-radius: 0.5rem;
-    }
-    button.btn-secondary {
-        color: $white;
-    }
+#contact .invalid-feedback {
+    color: $white;
+    background-color: $secondary;
+    border-radius: 0.5rem;
 }
 
 /*mediaQ*/
 @media (min-width: 767px) {
-    #header .nav-item .btn:hover,
-    #contact button:hover{
+    #header .btn-secondary:hover,
+    #contact .btn-secondary:hover {    
         color: $secondary;
         background: $white;
         border: 0.12rem solid $secondary;
     }
 
-    #hero {
-        .btn-primary:hover {
-            background:$white;
-            color: $primary;
-            border: 0.12rem solid $primary;
-        }
-        .btn-light:hover {
-            background:$white;
-            color: $grayishBlue;
-            border: 0.12rem solid $grayishBlue;
-        }
+    #hero .btn-primary:hover,
+    #extension a.btn:hover{
+        background:$white;
+        color: $primary;
+        border: 0.12rem solid $primary;
+    }
+    
+    #hero .btn-light:hover {
+        background:$white;
+        color: $grayishBlue;
+        border: 0.12rem solid $grayishBlue;
     }
 
     #features .nav-item {
@@ -135,13 +134,7 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     #extension .card:nth-child(3) {
         margin-top: 10rem;
     }
-
-    #extension a.btn:hover {
-        background:$white;
-        color: $primary;
-        border: 0.12rem solid $primary;
-    }
-
+    
     .accordion-item {
         border-top: $standardBorder;
         .accordion-button:hover {
