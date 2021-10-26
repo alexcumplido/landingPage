@@ -1,12 +1,8 @@
-:root {
-    --standardBorder:1px solid #dee2e6;
-}
-
 //Global variables
 $primary: hsl(232, 70%, 60%);
 $secondary: hsl(0, 94%, 66%);
 $grayishBlue: hsl(229, 8%, 60%);
-$standardBorder: 1px solid hsl(210, 14%, 89%);
+$standardBorder: 0.12rem solid hsl(210, 14%, 89%);
 
 $enable-shadows: true;
 $font-family-base: 'Rubik';
@@ -86,10 +82,10 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 
 /*Accordion*/
 .accordion-item {
-    border-bottom: var(--standardBorder);
+    border-bottom: $standardBorder;
 
     &:last-of-type { 
-        border-top: var(--standardBorder);
+        border-top: $standardBorder;
       }
 }
 

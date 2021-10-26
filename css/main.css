@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-:root {
-  --standardBorder:1px solid #dee2e6;
-}
-
 #header {
   overflow-x: hidden;
 }
 
 /*nabvar mobile Active States*/
 #header .modal .nav-item {
-  border-top: 1px solid #dfe3e7;
-  border-bottom: 1px solid #dfe3e7;
+  border-top: 0.12rem solid #dfe3e7;
+  border-bottom: 0.12rem solid #dfe3e7;
   width: 100%;
 }
 
@@ -24,7 +20,7 @@
 
 #header .modal .nav-item .nav-link:hover {
   font-weight: 600;
-  border: 1px solid #dfe3e7;
+  border: 0.12rem solid #dfe3e7;
   border-radius: 0.50rem;
 }
 
@@ -43,8 +39,8 @@
 }
 
 #features .nav-item {
-  border-top: 1px solid #dfe3e7;
-  border-bottom: 1px solid #dfe3e7;
+  border-top: 0.12rem solid #dfe3e7;
+  border-bottom: 0.12rem solid #dfe3e7;
 }
 
 #features .nav-item:hover {
@@ -67,11 +63,11 @@
 
 /*Accordion*/
 .accordion-item {
-  border-bottom: var(--standardBorder);
+  border-bottom: 0.12rem solid #dfe3e7;
 }
 
 .accordion-item:last-of-type {
-  border-top: var(--standardBorder);
+  border-top: 0.12rem solid #dfe3e7;
 }
 
 /*Form*/
@@ -114,7 +110,7 @@
     border: 0.12rem solid #5265e0;
   }
   .accordion-item {
-    border-top: 1px solid #dfe3e7;
+    border-top: 0.12rem solid #dfe3e7;
   }
 }
 
