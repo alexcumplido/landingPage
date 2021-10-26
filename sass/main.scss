@@ -9,23 +9,24 @@ $enable-shadows: true;
 $font-family-base: 'Rubik';
 $standardBorder: 0.12rem solid hsl(210, 14%, 89%);
 
-//Components variables
+//Navbar, nav-tans & nav-links
 $navbar-light-toggler-border-color: none;
 $navbar-light-hover-color: $secondary;
-
 $nav-link-hover-color: $secondary;
 $nav-tabs-link-hover-border-color: none;
 $nav-link-color: $grayishBlue;
 $nav-tabs-border-width: 0;
 
+//Modal
 $modal-content-border-width: none;
 $modal-content-bg:hsla(210, 11%, 15%, 0.885);
 
+//Accordion
 $accordion-border-color: none;
 $accordion-button-icon: url('../img/icon-arrow.svg');
 $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 
-/*Header*/
+//Header
 #header  {
     overflow-x: hidden;
 }
@@ -35,7 +36,7 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     color: $white;
 }
 
-/*nabvar mobile Active States*/
+//Mobile active states
 #header .modal {
     .nav-item {
         border-top: $standardBorder;
@@ -55,6 +56,7 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     }     
 }
 
+
 #header .custom-shape-hero {
     z-index: -1;
     width: 750px; 
@@ -63,7 +65,7 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     left: 140px;
 }
 
-/*Tabs*/
+//Featureres-tabs
 #features .nav-item {
     border-top: $standardBorder; 
     border-bottom: $standardBorder; 
@@ -80,13 +82,13 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     right: 150px;
 }
 
-/*Cards*/
+//Cards
 #extension .card-img-top {
     width: 115px;
     height: 115px;
 }
 
-/*Accordion*/
+//Accordion
 .accordion-item {
     border-bottom: $standardBorder;
     &:last-of-type { 
@@ -94,14 +96,14 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     }
 }
 
-/*Form*/
+//Form
 #contact .invalid-feedback {
     color: $white;
     background-color: $secondary;
     border-radius: 0.5rem;
 }
 
-/*mediaQ*/
+
 @media (min-width: 767px) {
     #header .btn-secondary:hover,
     #contact .btn-secondary:hover {    
@@ -134,7 +136,7 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     #extension .card:nth-child(3) {
         margin-top: 10rem;
     }
-    
+
     .accordion-item {
         border-top: $standardBorder;
         .accordion-button:hover {
