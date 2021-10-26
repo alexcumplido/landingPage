@@ -1,3 +1,7 @@
+:root {
+    --standardBorder:1px solid #dee2e6;
+}
+
 //Global variables
 $primary: hsl(232, 70%, 60%);
 $secondary: hsl(0, 94%, 66%);
@@ -81,11 +85,11 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 }
 
 /*Accordion*/
-#faq .accordion-item {
-    border-bottom: $standardBorder;
+.accordion-item {
+    border-bottom: var(--standardBorder);
 
     &:last-of-type { 
-        border-top: $standardBorder; ;
+        border-top: var(--standardBorder);
       }
 }
 
@@ -137,7 +141,7 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
         border: 0.12rem solid $primary;
     }
 
-    #faq .accordion-item {
+    .accordion-item {
         border-top: $standardBorder;
     }
 }   
