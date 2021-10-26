@@ -44,33 +44,12 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 }     
 }
 
-
-#header .nav-item .btn:hover,
-#contact button:hover {
-    color: $secondary;
-    background:hsl(0, 0%, 100%);
-    border: 1px solid $secondary;
-}
-
 #header .custom-shape-hero {
     z-index: -1;
     width: 750px; 
     height: 75%;
     bottom: 5px;
     left: 140px;
-}
-
-#hero {
-    .btn-primary:hover {
-        background:hsl(0, 0%, 100%);
-        color: $primary;
-        border: 0.12rem solid $primary;
-    }
-    .btn-light:hover {
-        background:hsl(0, 0%, 100%);
-        color: $grayishBlue;
-        border: 0.12rem solid$grayishBlue;
-    }
 }
 
 /*Tab*/
@@ -101,12 +80,6 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     height: 125px;
 }
 
-#extension a.btn:hover {
-    background:hsl(0, 0%, 100%);
-    color: $primary;
-    border: 0.12rem solid $primary;
-}
-
 /*Accordion*/
 #faq .accordion-item {
     border-bottom: $standardBorder;
@@ -126,12 +99,26 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 
 /*mediaQ*/
 @media (min-width: 767px) {
-
-    /*
-a.nav-link:hover {
+    #header .nav-item .btn:hover,
+    #contact button:hover {
     color: $secondary;
-}
-*/
+    background:hsl(0, 0%, 100%);
+    border: 1px solid $secondary;
+    }
+
+    #hero {
+        .btn-primary:hover {
+            background:hsl(0, 0%, 100%);
+            color: $primary;
+            border: 0.12rem solid $primary;
+        }
+        .btn-light:hover {
+            background:hsl(0, 0%, 100%);
+            color: $grayishBlue;
+            border: 0.12rem solid$grayishBlue;
+        }
+    }
+
     #features .nav-item {
         border-top: none;  
     }
@@ -142,6 +129,12 @@ a.nav-link:hover {
     
     #extension .card:nth-child(3){
         margin-top: 10rem;
+    }
+
+    #extension a.btn:hover {
+        background:hsl(0, 0%, 100%);
+        color: $primary;
+        border: 0.12rem solid $primary;
     }
 
     #faq .accordion-item {

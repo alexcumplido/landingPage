@@ -24,31 +24,12 @@
   border-radius: 0.50rem;
 }
 
-#header .nav-item .btn:hover,
-#contact button:hover {
-  color: #fa5757;
-  background: white;
-  border: 1px solid #fa5757;
-}
-
 #header .custom-shape-hero {
   z-index: -1;
   width: 750px;
   height: 75%;
   bottom: 5px;
   left: 140px;
-}
-
-#hero .btn-primary:hover {
-  background: white;
-  color: #5265e0;
-  border: 0.12rem solid #5265e0;
-}
-
-#hero .btn-light:hover {
-  background: white;
-  color: #9194a1;
-  border: 0.12rem solid #9194a1;
 }
 
 /*Tab*/
@@ -80,12 +61,6 @@
   height: 125px;
 }
 
-#extension a.btn:hover {
-  background: white;
-  color: #5265e0;
-  border: 0.12rem solid #5265e0;
-}
-
 /*Accordion*/
 #faq .accordion-item {
   border-bottom: 1px solid #dfe3e7;
@@ -104,11 +79,22 @@
 
 /*mediaQ*/
 @media (min-width: 767px) {
-  /*
-a.nav-link:hover {
-    color: $secondary;
-}
-*/
+  #header .nav-item .btn:hover,
+  #contact button:hover {
+    color: #fa5757;
+    background: white;
+    border: 1px solid #fa5757;
+  }
+  #hero .btn-primary:hover {
+    background: white;
+    color: #5265e0;
+    border: 0.12rem solid #5265e0;
+  }
+  #hero .btn-light:hover {
+    background: white;
+    color: #9194a1;
+    border: 0.12rem solid #9194a1;
+  }
   #features .nav-item {
     border-top: none;
   }
@@ -117,6 +103,11 @@ a.nav-link:hover {
   }
   #extension .card:nth-child(3) {
     margin-top: 10rem;
+  }
+  #extension a.btn:hover {
+    background: white;
+    color: #5265e0;
+    border: 0.12rem solid #5265e0;
   }
   #faq .accordion-item {
     border-top: 1px solid #dfe3e7;
