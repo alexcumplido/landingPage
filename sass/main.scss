@@ -9,6 +9,9 @@ $font-family-base: 'Rubik';
 
 $navbar-light-hover-color: $secondary;
 $nav-link-hover-color: $secondary;
+$nav-tabs-link-hover-border-color: none;
+$nav-link-color: $grayishBlue;
+$nav-tabs-border-width: 0;
 
 $modal-content-border-width: none;
 $modal-content-bg:hsla(210, 11%, 15%, 0.802);
@@ -17,6 +20,8 @@ $accordion-border-color: none;
 $accordion-button-icon: url('../img/icon-arrow.svg');
 $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 
+
+/*Tab*/
 #header  {
     overflow-x: hidden;
 }
@@ -50,12 +55,6 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
     height: 75%;
     bottom: 5px;
     left: 140px;
-}
-
-/*Tab*/
-#features ul,
-#features .nav-link {
-    border: none;
 }
 
 #features .nav-item {
