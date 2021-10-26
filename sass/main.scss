@@ -4,39 +4,47 @@ $secondary: hsl(0, 94%, 66%);
 $grayishBlue: hsl(229, 8%, 60%);
 $standardBorder: 1px solid hsl(210, 14%, 89%);
 $enable-shadows: true;
+$navbar-light-hover-color: $secondary;
+$nav-link-hover-color: $secondary;
 $accordion-border-color: none;
 $accordion-button-icon: url('../img/icon-arrow.svg');
 $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 $font-family-base: 'Rubik';
-$navbar-light-hover-color: $secondary;
-$nav-link-hover-color: $secondary;
-
 
 #header  {
     overflow-x: hidden;
-    
 }
 
-a.nav-link:hover {
-    color: $secondary;
-}
+/*nabvar mobile Active States*/
+#header .modal {
 
-#header .modal-header {
-    border: none;
-}
+    .modal-header{
+        border: none;
+    }
 
-#header .modal-content {    
-    background-color: hsla(210, 11%, 15%, 0.364);
-}
+    .modal-content {
+        background-color:  hsla(210, 11%, 15%, 0.802);
+    }
 
-#header .modal .nav-item {
-    border-top: $standardBorder;
-    border-bottom: $standardBorder; 
-    width: 100%;
-}
+    .nav-item {
+        border-top: $standardBorder;
+        border-bottom: $standardBorder; 
+        width: 100%;
 
-#header .modal a {
-    color: hsl(210, 14%, 89%);
+    &:hover{
+        border:none
+    }
+
+    .nav-link{
+        color: hsl(210, 14%, 89%);
+
+        &:hover {
+            font-weight: 600;
+            border:$standardBorder;
+            border-radius: 0.50rem;
+        }
+    } 
+}     
 }
 
 #header .custom-shape-hero {
@@ -91,15 +99,22 @@ a.nav-link:hover {
     border-radius: 0.5rem;
 }
 
+/*
 #contact button:hover,
 #header a.btn:hover {
     color: $secondary;
-    background:$white;
+    background:hsl(0, 0%, 100%);
     border: 1px solid $secondary;
-}
+}*/
 
 /*mediaQ*/
 @media (min-width: 767px) {
+
+    /*
+a.nav-link:hover {
+    color: $secondary;
+}
+*/
     #features .nav-item {
         border-top: none;  
     }

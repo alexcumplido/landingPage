@@ -3,16 +3,13 @@
   overflow-x: hidden;
 }
 
-a.nav-link:hover {
-  color: #fa5757;
-}
-
-#header .modal-header {
+/*nabvar mobile Active States*/
+#header .modal .modal-header {
   border: none;
 }
 
-#header .modal-content {
-  background-color: rgba(34, 38, 42, 0.364);
+#header .modal .modal-content {
+  background-color: rgba(34, 38, 42, 0.802);
 }
 
 #header .modal .nav-item {
@@ -21,8 +18,18 @@ a.nav-link:hover {
   width: 100%;
 }
 
-#header .modal a {
+#header .modal .nav-item:hover {
+  border: none;
+}
+
+#header .modal .nav-item .nav-link {
   color: #dfe3e7;
+}
+
+#header .modal .nav-item .nav-link:hover {
+  font-weight: 600;
+  border: 1px solid #dfe3e7;
+  border-radius: 0.50rem;
 }
 
 #header .custom-shape-hero {
@@ -78,14 +85,20 @@ a.nav-link:hover {
   border-radius: 0.5rem;
 }
 
+/*
 #contact button:hover,
-#header a.button:hover {
-  background: white;
-  border: 1px solid #fa5757;
-}
-
+#header a.btn:hover {
+    color: $secondary;
+    background:hsl(0, 0%, 100%);
+    border: 1px solid $secondary;
+}*/
 /*mediaQ*/
 @media (min-width: 767px) {
+  /*
+a.nav-link:hover {
+    color: $secondary;
+}
+*/
   #features .nav-item {
     border-top: none;
   }
