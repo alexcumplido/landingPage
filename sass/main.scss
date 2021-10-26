@@ -26,7 +26,6 @@ $accordion-border-color: none;
 $accordion-button-icon: url('../img/icon-arrow.svg');
 $accordion-button-active-color: $secondary;
 
-
 #header  {
     overflow-x: hidden;
 }
@@ -107,26 +106,31 @@ $accordion-button-active-color: $secondary;
 
 //Destkop active states
 @media (min-width: 767px) {
+
+    @mixin btn ($color,$background) {
+        color: $color;
+        background: $white;
+        border: 0.12rem solid $color;
+    }
+
     #header .btn-secondary:hover,
     #contact .btn-secondary:hover {    
-        color: $secondary;
-        background: $white;
-        border: 0.12rem solid $secondary;
-    }
-
-    #hero .btn-primary:hover,
-    #extension a.btn:hover{
-        background:$white;
-        color: $primary;
-        border: 0.12rem solid $primary;
+        @include btn($secondary,$secondary);
     }
     
-    #hero .btn-light:hover {
-        background:$white;
-        color: $grayishBlue;
-        border: 0.12rem solid $grayishBlue;
+    #hero {
+        .btn-primary:hover {
+            @include btn($primary,$primary);
+        }
+        .btn-light:hover {
+            @include btn($grayishBlue,$grayishBlue);
+        }
     }
 
+    #extension a.btn:hover{
+        @include btn($primary,$primary);
+    }
+    
     #features .nav-item {
         border-top: none;  
     }
