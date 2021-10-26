@@ -77,8 +77,8 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
 
 /*Cards*/
 #extension .card-img-top {
-    width: 125px;
-    height: 125px;
+    width: 115px;
+    height: 115px;
 }
 
 /*Accordion*/
@@ -100,8 +100,6 @@ $accordion-button-active-icon:  url('../img/icon-arrow.svg');
         color: $white;
     }
 }
-
-
 
 /*mediaQ*/
 @media (min-width: 767px) {
