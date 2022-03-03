@@ -1,6 +1,6 @@
 # Landing page
 
-This website is a fully responsive landing page.
+Responsive landing page using Sass preprocessor to customize original Bootstrap components.
 
 ### Demo
 
@@ -18,12 +18,12 @@ This website is a fully responsive landing page.
 
 ### User flow
 
-    · View optimal layour depending on their screen size
+    · View optimal layour depending on device screen size
     · See hover states for interactive elements
     · Visualize tabbed features section and the FAQ accordion
     · Receive an error message when email adress is not validated
 
-### Goals
+### Backlog and future developments
 
-    · Create a fully responsive landing page
-    · Use Sass preprocessor and customize original Bootstrap
+    · Create and extended newsletter form with multiple inputs
+    · Add transitions to cards from extension section
