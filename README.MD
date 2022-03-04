@@ -8,16 +8,16 @@ Responsive landing page using Sass preprocessor to customize original Bootstrap 
 
 #### Technologies
 
-    - HTML5
-    - CSS3
-    - SASS
-    - Bootstrap5
+    * HTML5
+    * CSS3
+    * SASS
+    * Bootstrap5
 
 #### How to start ?
 
-    · Clone this repository
-    · npm install bootstrap
-    · npm install -g sass
+    $ Clone this repository
+    $ npm install bootstrap
+    $ npm install -g sass
 
 #### User flow
 
