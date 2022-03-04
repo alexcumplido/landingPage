@@ -16,9 +16,8 @@ Responsive landing page using Sass preprocessor to customize original Bootstrap 
 #### How to start ?
 
 ```
-$ Clone this repository
 $ npm install bootstrap
-$ npm install -g sass
+$ npm install sass
 ```
 
 #### User flow
