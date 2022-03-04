@@ -8,10 +8,10 @@ Responsive landing page using Sass preprocessor to customize original Bootstrap 
 
 #### Technologies
 
-- HTML5
-- CSS3
-- SASS
-- Bootstrap5
+    - HTML5
+    - CSS3
+    - SASS
+    - Bootstrap5
 
 #### How to start ?
 
